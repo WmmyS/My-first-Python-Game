@@ -9,11 +9,14 @@ o link da primeira aula é : https://www.youtube.com/watch?v=ddgppBdhVn8.
 	Todo o conteúdo desse código é para fins didáticos e será colocado em meu portifólio para apresentação e futuras atualizações,
 caso queiram testar e sugerir alterações fiquem a vontade. :) """
 
-"""This is my first litle game in python language, the logic in this code was not created by me,but the all
-changes and drawings were. The initial project was created starting of the tutorial on Youtube chanel: Eletrônica e Programação,
+"""Aviso importante : para o funcionamento da aplicação é necessária ainstalação do pygame no seu sistema pode-se utilizar o comando:
+py -m pip install -U pygame --user"""
+
+"""This is my first little game in python language, the logic in this code was not created by me,but all the
+changes and drawings were. The initial project was created based on the tutorial on Youtube chanel: Eletrônica e Programação,
 the link of the first class is: https://www.youtube.com/watch?v=ddgppBdhVn8.
-	All content of this code is for didactic purposes and will be placed in my portifolio to apresentation and updates in the future,
-if you want test and sugest changes fells free :)"""
+	All content of this code is for didactic purposes and will be placed in my portifolio for the presentation, future updates,
+if you want to test and suggest changes, feel free :)"""
 
 clock = pygame.time.Clock()
 
@@ -29,7 +32,7 @@ def crashc(y1,x1,y,x,crash):
 	if ((y1 in range(y1 + 80) and (x1 in range(x1 + 80)))) == ((y in range(y+80)) and (x in range(x+80))):
 		crash.play()
 
-"""Nesta parte inserimos o timer e suas fontes e modelos (futuras alterações)"""
+"""Nesta parte inseri o timer e suas fontes e modelos (futuras alterações)"""
 
 font = pygame.font.SysFont('Cooper Black', 25)
 text = font.render("Time: 0",True,(255,150,0),(0,0,0))
